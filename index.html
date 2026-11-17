@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Login</h1>
+    <p class="muted">Enter your username and password.</p>
+    <form id="loginForm" novalidate>
+      <label for="username">Username</label>
+      <input id="username" name="username" autocomplete="username" placeholder="Enter username">
+      <small id="usernameError" class="error"></small>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter password">
+      <small id="passwordError" class="error"></small>
+      <button type="submit">Login</button>
+      <p id="message" role="status" aria-live="polite"></p>
+    </form>
+    <p class="hint">Demo credentials: <b>student</b> / <b>Student@123</b></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
